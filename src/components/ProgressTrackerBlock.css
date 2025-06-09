@@ -1,0 +1,168 @@
+.progress-tracker-block {
+  background-color: white;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
+}
+
+.progress-tracker-block:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.block-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.block-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.block-title-container {
+  flex: 1;
+  min-width: 0;
+}
+
+.block-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 0.25rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.block-type {
+  font-size: 0.75rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.block-content {
+  margin-bottom: 1rem;
+}
+
+/* Project Hours Details */
+.hours-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hours-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.hours-item svg {
+  color: #6c757d;
+}
+
+.hours-label {
+  color: #6c757d;
+}
+
+.hours-value {
+  font-weight: 500;
+  color: #333;
+  margin-left: auto;
+}
+
+.hours-total {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e9ecef;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Agreement Details */
+.agreement-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.usage-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.usage-label {
+  color: #6c757d;
+}
+
+.usage-value {
+  font-weight: 600;
+  color: #333;
+}
+
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.progress-percentage {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #495057;
+  min-width: 40px;
+  text-align: right;
+}
+
+.period-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.period-label {
+  color: #6c757d;
+}
+
+.period-value {
+  color: #495057;
+}
+
+/* Status */
+.block-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #27ae60;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e9ecef;
+}
