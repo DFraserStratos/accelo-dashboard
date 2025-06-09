@@ -1,0 +1,63 @@
+.company-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.company-card:hover {
+  border-color: #3498db;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.company-card.selected {
+  border-color: #3498db;
+  background-color: #f0f8ff;
+}
+
+.company-card:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.3);
+}
+
+.company-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  color: #6c757d;
+}
+
+.company-card.selected .company-icon {
+  background-color: #e8f4fd;
+  color: #3498db;
+}
+
+.company-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.company-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.company-item-count {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
